@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8173.3" systemVersion="15A263e" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8089"/>
+    </dependencies>
+    <scenes>
+        <!--Airport Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="AirportInterfaceController" customModule="FlightWatcher_WatchKit_1_Extension">
+                    <items>
+                        <table alignment="center" verticalAlignment="center" id="c8F-ST-fB3">
+                            <items>
+                                <tableRow identifier="AirportNameRow" id="iaf-N2-HCX" customClass="AirportNameRow" customModule="FlightWatcher_WatchKit_1_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="FQw-dZ-4On">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="AirportName" id="uy4-2e-bnR"/>
+                                        </items>
+                                        <connections>
+                                            <segue destination="a83-ak-7kz" kind="push" identifier="TypeSelection" id="SkP-Iu-lsW"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="airportNameLabel" destination="uy4-2e-bnR" id="dzX-r1-hX2"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="airportTable" destination="c8F-ST-fB3" id="ujy-LO-l9H"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="193" y="335"/>
+        </scene>
+        <!--Type Interface Controller-->
+        <scene sceneID="GiY-l2-6Ae">
+            <objects>
+                <controller hidesWhenLoading="NO" id="a83-ak-7kz" customClass="TypeInterfaceController" customModule="FlightWatcher_WatchKit_1_Extension">
+                    <items>
+                        <table alignment="center" verticalAlignment="center" id="eTo-EI-tpU">
+                            <items>
+                                <tableRow identifier="TypeRow" id="RKh-V0-BW1" customClass="TypeRow" customModule="FlightWatcher_WatchKit_1_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="Mvd-67-ubE">
+                                        <items>
+                                            <imageView width="30" alignment="left" verticalAlignment="center" contentMode="scaleAspectFit" id="Unw-Nb-6tp"/>
+                                            <label alignment="right" verticalAlignment="center" text="Arr/Dep" id="rgT-xg-JKT"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="ADImage" destination="Unw-Nb-6tp" id="wLC-bE-Hcz"/>
+                                        <outlet property="ADLabel" destination="rgT-xg-JKT" id="rdv-pJ-hW3"/>
+                                        <segue destination="rKK-oP-4Jq" kind="push" identifier="FlightsSelection" id="kLV-aN-lVM"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="ADTable" destination="eTo-EI-tpU" id="Lfm-rn-yNa"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="430" y="335"/>
+        </scene>
+        <!--Flights Interface Controller-->
+        <scene sceneID="uSr-uj-wnD">
+            <objects>
+                <controller hidesWhenLoading="NO" id="rKK-oP-4Jq" customClass="FlightsInterfaceController" customModule="FlightWatcher_WatchKit_1_Extension">
+                    <items>
+                        <table alignment="left" id="4Ld-FA-Ift">
+                            <items>
+                                <tableRow identifier="FlightRow" id="h43-Yi-nQ3" customClass="FlightRow" customModule="FlightWatcher_WatchKit_1_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="UhL-nG-LeR">
+                                        <items>
+                                            <label alignment="left" text="City" id="zaF-3q-dyN">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                            <group width="1" alignment="left" id="Auc-To-22D">
+                                                <items>
+                                                    <label alignment="left" text="Time" id="XqC-QI-zmR">
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                                    </label>
+                                                    <label alignment="right" text="FlightCode" id="elC-Xa-HD6">
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="cityLabel" destination="zaF-3q-dyN" id="EBh-ca-qq2"/>
+                                        <outlet property="flightCodeLabel" destination="elC-Xa-HD6" id="BAP-P3-iZA"/>
+                                        <outlet property="timeLabel" destination="XqC-QI-zmR" id="owZ-RK-ttq"/>
+                                        <segue destination="qsC-LA-978" kind="push" identifier="FlightDetails" id="x4A-JF-hL1"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="flightsTable" destination="4Ld-FA-Ift" id="Xhc-8U-akf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="679" y="335"/>
+        </scene>
+        <!--Details Interface Controller-->
+        <scene sceneID="AdX-Dl-Hl0">
+            <objects>
+                <controller hidesWhenLoading="NO" id="qsC-LA-978" customClass="DetailsInterfaceController" customModule="FlightWatcher_WatchKit_1_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="Syl-TO-3TO">
+                            <items>
+                                <label alignment="left" text="Date:" id="f38-5P-JXs">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="FlightDate" id="3oA-AL-D6m">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="jTI-KD-yJJ">
+                            <items>
+                                <label alignment="left" text="Code:" id="BsL-13-Wfj">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="FlightCode" id="Nnf-Nt-iYZ">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="0Kg-qC-jkb">
+                            <items>
+                                <label alignment="left" text="From:" id="JnI-ug-Tca">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="FromCity" id="wnI-ho-DDY">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="8Fn-mq-1SJ">
+                            <items>
+                                <label alignment="left" text="To:" id="uf1-4I-e2D">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="ToCity" id="RrI-qE-JqD">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="CyR-eh-U7i">
+                            <items>
+                                <label alignment="left" text="Planned:" id="ClE-0m-BLV">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="PlanTime" id="ecs-BR-fDU">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="a15-1z-wSH">
+                            <items>
+                                <label alignment="left" text="Expect.:" id="Krp-iy-w7p">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="ExpTime" id="jG2-y9-NOF">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="J8L-B0-exB">
+                            <items>
+                                <label alignment="left" text="Area:" id="RXi-fd-OoT">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="TerminalArea" id="YrN-Hc-b2H">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="nle-s6-aG0">
+                            <items>
+                                <label alignment="left" text="State:" id="HeG-aq-2qi">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="FlightState" id="dsO-bS-Nel">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Airplane" id="bVh-qz-BQF">
+                            <connections>
+                                <segue destination="7UI-PM-XcE" kind="push" identifier="AirplaneDetails" id="93J-CQ-Fsm"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="expectedTimeLabel" destination="jG2-y9-NOF" id="KT6-91-AfI"/>
+                        <outlet property="flightCodeLabel" destination="Nnf-Nt-iYZ" id="vub-d6-YFp"/>
+                        <outlet property="flightDateLabel" destination="3oA-AL-D6m" id="bg0-wE-DAq"/>
+                        <outlet property="flightStateLabel" destination="dsO-bS-Nel" id="pWu-5a-s1L"/>
+                        <outlet property="fromCityLabel" destination="wnI-ho-DDY" id="3Pu-ve-lSR"/>
+                        <outlet property="planTimeLabel" destination="ecs-BR-fDU" id="3Jg-0j-ubJ"/>
+                        <outlet property="terminalAreaLabel" destination="YrN-Hc-b2H" id="q0Z-gb-H1b"/>
+                        <outlet property="toCityLabel" destination="RrI-qE-JqD" id="OGk-Ri-4tG"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="193" y="680.25"/>
+        </scene>
+        <!--Airplane Interface Controller-->
+        <scene sceneID="xHo-gq-8Yn">
+            <objects>
+                <controller hidesWhenLoading="NO" id="7UI-PM-XcE" customClass="AirplaneInterfaceController" customModule="FlightWatcher_WatchKit_1_Extension">
+                    <items>
+                        <group width="1" alignment="left" radius="7" id="tgN-Md-dkI">
+                            <items>
+                                <imageView alignment="center" id="shZ-rU-Jub" userLabel="Airplane Image"/>
+                            </items>
+                        </group>
+                        <label alignment="center" text="AirplaneName" numberOfLines="2" id="agV-rU-NXN" userLabel="Airplane Name"/>
+                    </items>
+                    <connections>
+                        <outlet property="airplaneImage" destination="shZ-rU-Jub" id="aLa-J0-MPi"/>
+                        <outlet property="airplaneName" destination="agV-rU-NXN" id="iHV-UO-7hQ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="430" y="681"/>
+        </scene>
+    </scenes>
+</document>
