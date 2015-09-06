@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC80003B1B8C9249001877ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC80003A1B8C9249001877ED /* Assets.xcassets */; };
+		BCA053DB1B8B29D300C7B356 /* AirportContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA053DA1B8B29D300C7B356 /* AirportContext.swift */; };
+		BCA053DD1B8B388900C7B356 /* TypeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA053DC1B8B388900C7B356 /* TypeRow.swift */; };
+		BCA053DF1B8B8E7000C7B356 /* DetailsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA053DE1B8B8E7000C7B356 /* DetailsInterfaceController.swift */; };
+		BCA053E11B8B929000C7B356 /* AirplaneInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA053E01B8B929000C7B356 /* AirplaneInterfaceController.swift */; };
+		BCA053E31B8BA86500C7B356 /* Airplane.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA053E21B8BA86500C7B356 /* Airplane.swift */; };
+		BCC7045B1B890E99009750DA /* AirportInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC7045A1B890E99009750DA /* AirportInterfaceController.swift */; };
+		BCC7045D1B890E99009750DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCC7045C1B890E99009750DA /* Assets.xcassets */; };
+		BCC704621B890E99009750DA /* FlightWatcher WatchKit 1 App.app in Resources */ = {isa = PBXBuildFile; fileRef = BCC704611B890E99009750DA /* FlightWatcher WatchKit 1 App.app */; };
+		BCC704681B890E99009750DA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC704661B890E99009750DA /* Interface.storyboard */; };
+		BCC7046E1B890E99009750DA /* FlightWatcher WatchKit 1 Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCC704581B890E99009750DA /* FlightWatcher WatchKit 1 Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BCC7047B1B891605009750DA /* AirportNameRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC7047A1B891605009750DA /* AirportNameRow.swift */; };
+		BCC704801B89C933009750DA /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC7047F1B89C933009750DA /* Airport.swift */; };
+		BCC704821B89C999009750DA /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC704811B89C999009750DA /* Flight.swift */; };
+		BCC704841B8A49A1009750DA /* TypeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC704831B8A49A1009750DA /* TypeInterfaceController.swift */; };
+		BCC704861B8A4BFE009750DA /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC704851B8A4BFE009750DA /* AppData.swift */; };
+		BCC704881B8A56DF009750DA /* FlightsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC704871B8A56DF009750DA /* FlightsInterfaceController.swift */; };
+		BCFF7CAA1B890B8F00DC771A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF7CA91B890B8F00DC771A /* AppDelegate.swift */; };
+		BCFF7CAC1B890B8F00DC771A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF7CAB1B890B8F00DC771A /* ViewController.swift */; };
+		BCFF7CAF1B890B8F00DC771A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFF7CAD1B890B8F00DC771A /* Main.storyboard */; };
+		BCFF7CB11B890B8F00DC771A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFF7CB01B890B8F00DC771A /* Images.xcassets */; };
+		BCFF7CB41B890B8F00DC771A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCFF7CB21B890B8F00DC771A /* LaunchScreen.xib */; };
+		BCFF7CC01B890B8F00DC771A /* FlightWatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF7CBF1B890B8F00DC771A /* FlightWatcherTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCC704631B890E99009750DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCFF7C9C1B890B8F00DC771A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCC704601B890E99009750DA;
+			remoteInfo = "FlightWatcher WatchKit 1 App";
+		};
+		BCC7046C1B890E99009750DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCFF7C9C1B890B8F00DC771A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCC704571B890E99009750DA;
+			remoteInfo = "FlightWatcher WatchKit 1 Extension";
+		};
+		BCFF7CBA1B890B8F00DC771A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCFF7C9C1B890B8F00DC771A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCFF7CA31B890B8F00DC771A;
+			remoteInfo = FlightWatcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BCC704751B890E99009750DA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BCC7046E1B890E99009750DA /* FlightWatcher WatchKit 1 Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BC80003A1B8C9249001877ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCA053DA1B8B29D300C7B356 /* AirportContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportContext.swift; sourceTree = "<group>"; };
+		BCA053DC1B8B388900C7B356 /* TypeRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeRow.swift; sourceTree = "<group>"; };
+		BCA053DE1B8B8E7000C7B356 /* DetailsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsInterfaceController.swift; sourceTree = "<group>"; };
+		BCA053E01B8B929000C7B356 /* AirplaneInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirplaneInterfaceController.swift; sourceTree = "<group>"; };
+		BCA053E21B8BA86500C7B356 /* Airplane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Airplane.swift; sourceTree = "<group>"; };
+		BCC704581B890E99009750DA /* FlightWatcher WatchKit 1 Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FlightWatcher WatchKit 1 Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC7045A1B890E99009750DA /* AirportInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportInterfaceController.swift; sourceTree = "<group>"; };
+		BCC7045C1B890E99009750DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCC7045E1B890E99009750DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC704611B890E99009750DA /* FlightWatcher WatchKit 1 App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlightWatcher WatchKit 1 App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC704671B890E99009750DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		BCC7046B1B890E99009750DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC7047A1B891605009750DA /* AirportNameRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportNameRow.swift; sourceTree = "<group>"; };
+		BCC7047F1B89C933009750DA /* Airport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		BCC704811B89C999009750DA /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		BCC704831B8A49A1009750DA /* TypeInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeInterfaceController.swift; sourceTree = "<group>"; };
+		BCC704851B8A4BFE009750DA /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		BCC704871B8A56DF009750DA /* FlightsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightsInterfaceController.swift; sourceTree = "<group>"; };
+		BCFF7CA41B890B8F00DC771A /* FlightWatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightWatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCFF7CA81B890B8F00DC771A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCFF7CA91B890B8F00DC771A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCFF7CAB1B890B8F00DC771A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCFF7CAE1B890B8F00DC771A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCFF7CB01B890B8F00DC771A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BCFF7CB31B890B8F00DC771A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BCFF7CB91B890B8F00DC771A /* FlightWatcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightWatcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCFF7CBE1B890B8F00DC771A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCFF7CBF1B890B8F00DC771A /* FlightWatcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightWatcherTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCC704551B890E99009750DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFF7CA11B890B8F00DC771A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFF7CB61B890B8F00DC771A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCC704591B890E99009750DA /* FlightWatcher WatchKit 1 Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BCC704851B8A4BFE009750DA /* AppData.swift */,
+				BCC7047E1B89C918009750DA /* InterfaceControllers */,
+				BCC7047D1B89C907009750DA /* TableRows */,
+				BCC7047C1B89C8FD009750DA /* Model */,
+				BCC7045C1B890E99009750DA /* Assets.xcassets */,
+				BCC7045E1B890E99009750DA /* Info.plist */,
+			);
+			path = "FlightWatcher WatchKit 1 Extension";
+			sourceTree = "<group>";
+		};
+		BCC704651B890E99009750DA /* FlightWatcher WatchKit 1 App */ = {
+			isa = PBXGroup;
+			children = (
+				BCC704661B890E99009750DA /* Interface.storyboard */,
+				BCC7046B1B890E99009750DA /* Info.plist */,
+				BC80003A1B8C9249001877ED /* Assets.xcassets */,
+			);
+			path = "FlightWatcher WatchKit 1 App";
+			sourceTree = "<group>";
+		};
+		BCC7047C1B89C8FD009750DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCA053DA1B8B29D300C7B356 /* AirportContext.swift */,
+				BCC7047F1B89C933009750DA /* Airport.swift */,
+				BCC704811B89C999009750DA /* Flight.swift */,
+				BCA053E21B8BA86500C7B356 /* Airplane.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BCC7047D1B89C907009750DA /* TableRows */ = {
+			isa = PBXGroup;
+			children = (
+				BCC7047A1B891605009750DA /* AirportNameRow.swift */,
+				BCA053DC1B8B388900C7B356 /* TypeRow.swift */,
+			);
+			name = TableRows;
+			sourceTree = "<group>";
+		};
+		BCC7047E1B89C918009750DA /* InterfaceControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BCC7045A1B890E99009750DA /* AirportInterfaceController.swift */,
+				BCC704831B8A49A1009750DA /* TypeInterfaceController.swift */,
+				BCC704871B8A56DF009750DA /* FlightsInterfaceController.swift */,
+				BCA053DE1B8B8E7000C7B356 /* DetailsInterfaceController.swift */,
+				BCA053E01B8B929000C7B356 /* AirplaneInterfaceController.swift */,
+			);
+			name = InterfaceControllers;
+			sourceTree = "<group>";
+		};
+		BCFF7C9B1B890B8F00DC771A = {
+			isa = PBXGroup;
+			children = (
+				BCFF7CA61B890B8F00DC771A /* FlightWatcher */,
+				BCFF7CBC1B890B8F00DC771A /* FlightWatcherTests */,
+				BCC704591B890E99009750DA /* FlightWatcher WatchKit 1 Extension */,
+				BCC704651B890E99009750DA /* FlightWatcher WatchKit 1 App */,
+				BCFF7CA51B890B8F00DC771A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCFF7CA51B890B8F00DC771A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF7CA41B890B8F00DC771A /* FlightWatcher.app */,
+				BCFF7CB91B890B8F00DC771A /* FlightWatcherTests.xctest */,
+				BCC704581B890E99009750DA /* FlightWatcher WatchKit 1 Extension.appex */,
+				BCC704611B890E99009750DA /* FlightWatcher WatchKit 1 App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCFF7CA61B890B8F00DC771A /* FlightWatcher */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF7CA91B890B8F00DC771A /* AppDelegate.swift */,
+				BCFF7CAB1B890B8F00DC771A /* ViewController.swift */,
+				BCFF7CAD1B890B8F00DC771A /* Main.storyboard */,
+				BCFF7CB01B890B8F00DC771A /* Images.xcassets */,
+				BCFF7CB21B890B8F00DC771A /* LaunchScreen.xib */,
+				BCFF7CA71B890B8F00DC771A /* Supporting Files */,
+			);
+			path = FlightWatcher;
+			sourceTree = "<group>";
+		};
+		BCFF7CA71B890B8F00DC771A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF7CA81B890B8F00DC771A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCFF7CBC1B890B8F00DC771A /* FlightWatcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF7CBF1B890B8F00DC771A /* FlightWatcherTests.swift */,
+				BCFF7CBD1B890B8F00DC771A /* Supporting Files */,
+			);
+			path = FlightWatcherTests;
+			sourceTree = "<group>";
+		};
+		BCFF7CBD1B890B8F00DC771A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF7CBE1B890B8F00DC771A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCC704571B890E99009750DA /* FlightWatcher WatchKit 1 Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC704721B890E99009750DA /* Build configuration list for PBXNativeTarget "FlightWatcher WatchKit 1 Extension" */;
+			buildPhases = (
+				BCC704541B890E99009750DA /* Sources */,
+				BCC704551B890E99009750DA /* Frameworks */,
+				BCC704561B890E99009750DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCC704641B890E99009750DA /* PBXTargetDependency */,
+			);
+			name = "FlightWatcher WatchKit 1 Extension";
+			productName = "FlightWatcher WatchKit 1 Extension";
+			productReference = BCC704581B890E99009750DA /* FlightWatcher WatchKit 1 Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		BCC704601B890E99009750DA /* FlightWatcher WatchKit 1 App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC7046F1B890E99009750DA /* Build configuration list for PBXNativeTarget "FlightWatcher WatchKit 1 App" */;
+			buildPhases = (
+				BCC7045F1B890E99009750DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FlightWatcher WatchKit 1 App";
+			productName = "FlightWatcher WatchKit 1 App";
+			productReference = BCC704611B890E99009750DA /* FlightWatcher WatchKit 1 App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+		BCFF7CA31B890B8F00DC771A /* FlightWatcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCFF7CC31B890B8F00DC771A /* Build configuration list for PBXNativeTarget "FlightWatcher" */;
+			buildPhases = (
+				BCFF7CA01B890B8F00DC771A /* Sources */,
+				BCFF7CA11B890B8F00DC771A /* Frameworks */,
+				BCFF7CA21B890B8F00DC771A /* Resources */,
+				BCC704751B890E99009750DA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCC7046D1B890E99009750DA /* PBXTargetDependency */,
+			);
+			name = FlightWatcher;
+			productName = FlightWatcher;
+			productReference = BCFF7CA41B890B8F00DC771A /* FlightWatcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCFF7CB81B890B8F00DC771A /* FlightWatcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCFF7CC61B890B8F00DC771A /* Build configuration list for PBXNativeTarget "FlightWatcherTests" */;
+			buildPhases = (
+				BCFF7CB51B890B8F00DC771A /* Sources */,
+				BCFF7CB61B890B8F00DC771A /* Frameworks */,
+				BCFF7CB71B890B8F00DC771A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCFF7CBB1B890B8F00DC771A /* PBXTargetDependency */,
+			);
+			name = FlightWatcherTests;
+			productName = FlightWatcherTests;
+			productReference = BCFF7CB91B890B8F00DC771A /* FlightWatcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCFF7C9C1B890B8F00DC771A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = JanWasgint;
+				TargetAttributes = {
+					BCC704571B890E99009750DA = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					BCC704601B890E99009750DA = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					BCFF7CA31B890B8F00DC771A = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					BCFF7CB81B890B8F00DC771A = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = BCFF7CA31B890B8F00DC771A;
+					};
+				};
+			};
+			buildConfigurationList = BCFF7C9F1B890B8F00DC771A /* Build configuration list for PBXProject "FlightWatcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCFF7C9B1B890B8F00DC771A;
+			productRefGroup = BCFF7CA51B890B8F00DC771A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCFF7CA31B890B8F00DC771A /* FlightWatcher */,
+				BCFF7CB81B890B8F00DC771A /* FlightWatcherTests */,
+				BCC704571B890E99009750DA /* FlightWatcher WatchKit 1 Extension */,
+				BCC704601B890E99009750DA /* FlightWatcher WatchKit 1 App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCC704561B890E99009750DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC704621B890E99009750DA /* FlightWatcher WatchKit 1 App.app in Resources */,
+				BCC7045D1B890E99009750DA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC7045F1B890E99009750DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC80003B1B8C9249001877ED /* Assets.xcassets in Resources */,
+				BCC704681B890E99009750DA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFF7CA21B890B8F00DC771A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFF7CAF1B890B8F00DC771A /* Main.storyboard in Resources */,
+				BCFF7CB41B890B8F00DC771A /* LaunchScreen.xib in Resources */,
+				BCFF7CB11B890B8F00DC771A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFF7CB71B890B8F00DC771A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCC704541B890E99009750DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC704801B89C933009750DA /* Airport.swift in Sources */,
+				BCA053E11B8B929000C7B356 /* AirplaneInterfaceController.swift in Sources */,
+				BCA053E31B8BA86500C7B356 /* Airplane.swift in Sources */,
+				BCC704821B89C999009750DA /* Flight.swift in Sources */,
+				BCA053DB1B8B29D300C7B356 /* AirportContext.swift in Sources */,
+				BCC7045B1B890E99009750DA /* AirportInterfaceController.swift in Sources */,
+				BCC704881B8A56DF009750DA /* FlightsInterfaceController.swift in Sources */,
+				BCA053DF1B8B8E7000C7B356 /* DetailsInterfaceController.swift in Sources */,
+				BCC7047B1B891605009750DA /* AirportNameRow.swift in Sources */,
+				BCA053DD1B8B388900C7B356 /* TypeRow.swift in Sources */,
+				BCC704841B8A49A1009750DA /* TypeInterfaceController.swift in Sources */,
+				BCC704861B8A4BFE009750DA /* AppData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFF7CA01B890B8F00DC771A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFF7CAC1B890B8F00DC771A /* ViewController.swift in Sources */,
+				BCFF7CAA1B890B8F00DC771A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFF7CB51B890B8F00DC771A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFF7CC01B890B8F00DC771A /* FlightWatcherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCC704641B890E99009750DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCC704601B890E99009750DA /* FlightWatcher WatchKit 1 App */;
+			targetProxy = BCC704631B890E99009750DA /* PBXContainerItemProxy */;
+		};
+		BCC7046D1B890E99009750DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCC704571B890E99009750DA /* FlightWatcher WatchKit 1 Extension */;
+			targetProxy = BCC7046C1B890E99009750DA /* PBXContainerItemProxy */;
+		};
+		BCFF7CBB1B890B8F00DC771A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCFF7CA31B890B8F00DC771A /* FlightWatcher */;
+			targetProxy = BCFF7CBA1B890B8F00DC771A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCC704661B890E99009750DA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCC704671B890E99009750DA /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		BCFF7CAD1B890B8F00DC771A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCFF7CAE1B890B8F00DC771A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCFF7CB21B890B8F00DC771A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCFF7CB31B890B8F00DC771A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCC704701B890E99009750DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				IBSC_MODULE = FlightWatcher_WatchKit_1_Extension;
+				INFOPLIST_FILE = "FlightWatcher WatchKit 1 App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jan.wasgint.FlightWatcher.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		BCC704711B890E99009750DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = FlightWatcher_WatchKit_1_Extension;
+				INFOPLIST_FILE = "FlightWatcher WatchKit 1 App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jan.wasgint.FlightWatcher.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		BCC704731B890E99009750DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = "FlightWatcher WatchKit 1 Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jan.wasgint.FlightWatcher.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BCC704741B890E99009750DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "FlightWatcher WatchKit 1 Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jan.wasgint.FlightWatcher.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BCFF7CC11B890B8F00DC771A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BCFF7CC21B890B8F00DC771A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCFF7CC41B890B8F00DC771A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = FlightWatcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BCFF7CC51B890B8F00DC771A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = FlightWatcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BCFF7CC71B890B8F00DC771A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FlightWatcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlightWatcher.app/FlightWatcher";
+			};
+			name = Debug;
+		};
+		BCFF7CC81B890B8F00DC771A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FlightWatcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlightWatcher.app/FlightWatcher";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCC7046F1B890E99009750DA /* Build configuration list for PBXNativeTarget "FlightWatcher WatchKit 1 App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC704701B890E99009750DA /* Debug */,
+				BCC704711B890E99009750DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC704721B890E99009750DA /* Build configuration list for PBXNativeTarget "FlightWatcher WatchKit 1 Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC704731B890E99009750DA /* Debug */,
+				BCC704741B890E99009750DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCFF7C9F1B890B8F00DC771A /* Build configuration list for PBXProject "FlightWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCFF7CC11B890B8F00DC771A /* Debug */,
+				BCFF7CC21B890B8F00DC771A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCFF7CC31B890B8F00DC771A /* Build configuration list for PBXNativeTarget "FlightWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCFF7CC41B890B8F00DC771A /* Debug */,
+				BCFF7CC51B890B8F00DC771A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCFF7CC61B890B8F00DC771A /* Build configuration list for PBXNativeTarget "FlightWatcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCFF7CC71B890B8F00DC771A /* Debug */,
+				BCFF7CC81B890B8F00DC771A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCFF7C9C1B890B8F00DC771A /* Project object */;
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8173.3" systemVersion="15A263e" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8089"/>
+    </dependencies>
+    <scenes>
+        <!--Airport Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="AirportInterfaceController" customModule="FlightWatcher_WatchKit_1_Extension">
+                    <items>
+                        <table alignment="center" verticalAlignment="center" id="c8F-ST-fB3">
+                            <items>
+                                <tableRow identifier="AirportNameRow" id="iaf-N2-HCX" customClass="AirportNameRow" customModule="FlightWatcher_WatchKit_1_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="FQw-dZ-4On">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="AirportName" id="uy4-2e-bnR"/>
+                                        </items>
+                                        <connections>
+                                            <segue destination="a83-ak-7kz" kind="push" identifier="TypeSelection" id="SkP-Iu-lsW"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="airportNameLabel" destination="uy4-2e-bnR" id="dzX-r1-hX2"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="airportTable" destination="c8F-ST-fB3" id="ujy-LO-l9H"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="193" y="335"/>
+        </scene>
+        <!--Type Interface Controller-->
+        <scene sceneID="GiY-l2-6Ae">
+            <objects>
+                <controller hidesWhenLoading="NO" id="a83-ak-7kz" customClass="TypeInterfaceController" customModule="FlightWatcher_WatchKit_1_Extension">
+                    <items>
+                        <table alignment="center" verticalAlignment="center" id="eTo-EI-tpU">
+                            <items>
+                                <tableRow identifier="TypeRow" id="RKh-V0-BW1" customClass="TypeRow" customModule="FlightWatcher_WatchKit_1_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="Mvd-67-ubE">
+                                        <items>
+                                            <imageView width="30" alignment="left" verticalAlignment="center" contentMode="scaleAspectFit" id="Unw-Nb-6tp"/>
+                                            <label alignment="right" verticalAlignment="center" text="Arr/Dep" id="rgT-xg-JKT"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="ADImage" destination="Unw-Nb-6tp" id="wLC-bE-Hcz"/>
+                                        <outlet property="ADLabel" destination="rgT-xg-JKT" id="rdv-pJ-hW3"/>
+                                        <segue destination="rKK-oP-4Jq" kind="push" identifier="FlightsSelection" id="kLV-aN-lVM"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="ADTable" destination="eTo-EI-tpU" id="Lfm-rn-yNa"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="430" y="335"/>
+        </scene>
+        <!--Flights Interface Controller-->
+        <scene sceneID="uSr-uj-wnD">
+            <objects>
+                <controller hidesWhenLoading="NO" id="rKK-oP-4Jq" customClass="FlightsInterfaceController" customModule="FlightWatcher_WatchKit_1_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="679" y="335"/>
+        </scene>
+        <!--Details Interface Controller-->
+        <scene sceneID="AdX-Dl-Hl0">
+            <objects>
+                <controller hidesWhenLoading="NO" id="qsC-LA-978" customClass="DetailsInterfaceController" customModule="FlightWatcher_WatchKit_1_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="939" y="335"/>
+        </scene>
+    </scenes>
+</document>
