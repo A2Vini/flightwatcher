@@ -35,10 +35,7 @@ class AirportInterfaceController: WKInterfaceController {
     
     override func contextForSegueWithIdentifier(segueIdentifier: String,
         inTable table: WKInterfaceTable, rowIndex: Int) -> AnyObject? {
-        if segueIdentifier == "TypeSelection" {
-            let airport = airports[rowIndex]
-            return airport
-        }
+        // TODO Students: Pass selected airport to the next interface
         return nil
     }
 }
